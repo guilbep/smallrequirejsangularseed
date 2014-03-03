@@ -2,6 +2,7 @@ require.config({
     "paths": {
         "vendor": "./vendor",
         "home": "home",
+        "home2": "home2",
         "app" : "app",
         "angular": "vendor/angular/angular",
         "angular-route": "vendor/angular-route/angular-route",
@@ -18,7 +19,7 @@ require.config({
     "baseUrl": "/"
 });
 
-require(['domReady', "angular", "app", "home"], function(domReady, angular) {
+require(['domReady', "angular", "app"], function(domReady, angular) {
     domReady(function () {
         angular.element().ready(function() {
             angular.bootstrap(document, ["app"])
